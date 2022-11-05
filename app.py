@@ -23,9 +23,9 @@ def predict_api():
 
 @app.route('/predict', methods=['POST'])
 def predict():
+    '''Actual route for the predictions'''
     data = [float(x) for x in request.form.values()]
     scaled_input = scaler.transform(np.array(data).reshape(1,-1))
-    print(scaled_input)
     output = regmodel.predict(scaled_input)[0] #predicting
     return render_template('home.html', prediction_text=f'The predicted price: {output}')
 

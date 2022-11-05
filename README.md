@@ -21,6 +21,8 @@ more details to come!!
 
 1. Import the necessary modules/ packages needed for this project.
 2. Load and Prepare the dataset (this involves ensuring no null values).
+3. Set up Procfile for Heroku deployment.
+   - be sure to add the _gunicorn_ to both _procfile_ and _requirements.txt_.
 
 #### Create a new environment
 
