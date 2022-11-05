@@ -8,9 +8,10 @@ In this repo, we implement and end-to-end Machine Learning project to predict ho
 2. [Github Account](https://github.com)
 3. [Git CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
 4. [Visual Studio Code IDE](https://code.visualstudio.com/)
-5. [Heroku Account](https://www.heroku.com/)
-6. Basic python programing.
-7. Basic modular programming knowledge.
+5. [Postman](https://www.postman.com/downloads/)
+6. [Heroku Account](https://www.heroku.com/)
+7. Basic python programing.
+8. Basic modular programming knowledge.
 
 ### Intro: What are Recommender Systems?
 
@@ -44,4 +45,16 @@ pip install -r requirements.txt
 ```python
 git config --global user.name
 git config --global user.email
+```
+
+#### Setup and run the flask app
+
+```python
+flask run
+```
+
+#### Credits
+
+```
+https://www.youtube.com/watch?v=MJ1vWb1rGwM&t=1s
 ```
