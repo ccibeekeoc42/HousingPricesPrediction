@@ -17,15 +17,16 @@ https://boston-housing-prices1.herokuapp.com/
 7. Basic python programing.
 8. Basic modular programming knowledge.
 
-### Intro: What are Recommender Systems?
-
-more details to come!!
-
 ### Steps to completing the project
 
 1. Import the necessary modules/ packages needed for this project.
 2. Load and Prepare the dataset (this involves ensuring no null values).
-3. Set up Procfile for Heroku deployment.
+3. Perform some Exploratory Data Analysis (EDA).
+4. Splitting into Training & Testing Sets.
+5. Implementing Linear Regression.
+6. Exploring the model's performance.
+7. Picklethe necessary model files
+8. Set up Procfile for Heroku deployment.
    - be sure to add the _gunicorn_ to both _procfile_ and _requirements.txt_.
 
 #### Create a new environment
