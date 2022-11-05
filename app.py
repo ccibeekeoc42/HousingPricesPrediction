@@ -2,6 +2,7 @@ import pickle
 from flask import Flask, request, app, jsonify, url_for, render_template
 import numpy as np
 import pandas as pd
+from sklearn.datasets import load_boston
 
 app=Flask(__name__)
 ## Load the model
@@ -10,7 +11,8 @@ scaler = pickle.load(open('scaling.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    boston = load_boston() 
+    return render_template('home.html', desc_text=boston['DESCR'])
 
 @app.route('/predict_api', methods=['POST'])
 def predict_api():

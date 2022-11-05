@@ -2,6 +2,10 @@
 
 In this repo, we implement and end-to-end Machine Learning project to predict housing prices using the Boston housing dataset. Enjoy!!
 
+### Try Out the full App
+
+https://boston-housing-prices1.herokuapp.com/
+
 ### Software, Tools, and prerequisits
 
 1. Access to [Google Colab](https://colab.research.google.com/).

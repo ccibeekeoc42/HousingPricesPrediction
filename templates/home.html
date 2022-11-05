@@ -8,6 +8,16 @@
     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style>
+        div {
+          margin-bottom: 10px;
+        }
+        label {
+          display: inline-block;
+          width: 60px;
+          text-align: right;
+        }
+      </style>
 </head>
 
 <body>
@@ -16,25 +26,37 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="CRIM" placeholder="CRIM" required="required" value="0.00632" /><br>
-    	<input type="text" name="ZN" placeholder="ZN" required="required" value="31.0" /><br>
+        <label>CRIM:</label>
+        <input type="text" name="CRIM" placeholder="CRIM" required="required" value="0.00632" /><br>
+    	<label>ZN:</label>
+        <input type="text" name="ZN" placeholder="ZN" required="required" value="31.0" /><br>
+        <label>INDUS:</label>
         <input type="text" name="INDUS" placeholder="INDUS" required="required" value="2.31" /><br>
+        <label>CHAS:</label>
         <input type="text" name="CHAS" placeholder="CHAS" required="required" value="0.0" /><br>
+        <label>NOX:</label>
         <input type="text" name="NOX" placeholder="NOX" required="required" value="0.538" /><br>
+        <label>RM:</label>
         <input type="text" name="RM" placeholder="RM" required="required" value="6.575" /><br>
+        <label>Age:</label>
         <input type="text" name="Age" placeholder="Age" required="required" value="65.2" /><br>
+        <label>DIS:</label>
         <input type="text" name="DIS" placeholder="DIS" required="required" value="4.0900" /><br>
+        <label>RAD:</label>
         <input type="text" name="RAD" placeholder="RAD" required="required" value="1.0" /><br>
+        <label>TAX:</label>
         <input type="text" name="TAX" placeholder="TAX" required="required" value="296" /><br>
+        <label>PTRATIO:</label>
         <input type="text" name="PTRATIO" placeholder="PTRATIO" required="required" value="15.3" /><br>
+        <label>B:</label>
         <input type="text" name="B" placeholder="B" required="required" value="396.90" /><br>
+        <label>LSTAT:</label>
         <input type="text" name="LSTAT" placeholder="LSTAT" required="required" value="4.98" /><br>
 
        
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
-
    <br>
    <br>
   
@@ -42,5 +64,8 @@
  </div>
  {{prediction_text}}
 
+ <br>
+ <br>
+   <p>{{desc_text}}</p>
 </body>
 </html>
